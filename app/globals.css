@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 150 20% 98%;
+  --foreground: 166 24% 13%;
+  --card: 0 0% 100%;
+  --primary: 169 63% 29%;
+  --muted: 150 13% 95%;
+  --muted-foreground: 165 8% 45%;
+  --border: 155 14% 89%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f8f7;
+  color: #18322f;
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: #d5eee8;
+  color: #123f3b;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.subtle-grid {
+  background-image: radial-gradient(#cbd8d3 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
